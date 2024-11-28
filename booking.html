@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Destination Booking</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="cont1"> 
+        <h2>Destination Booking Form</h2>
+        <form id="bookForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="destination" placeholder="Destination" required>
+            <select id="category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="leisure">Leisure</option>
+                <option value="business">Business</option>
+                <option value="adventure">Adventure</option>
+                <option value="cultural">Cultural</option>
+            </select>
+            <button  id="email" type="button" onclick="createBooking()">Book Destination</button>
+            <button type="button" onclick="updateBooking()" style="display:none;">Update Booking</button>
+        </form>
+    </div>
+
+    <div class="cont2">
+        <h2>Booking List</h2>
+        <table id="bookingTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>Destination</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="bookingList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wanderer: Explore More, Worry Less</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <img src="logos/logo.png" alt="Logo" class="logo">
+            <nav class="nav">
+                <ul>
+                    <li onclick="show()">Destinations</li>
+                    <li onclick="getredirect()">Booking Resources</li>
+                    <li>
+                        <select id="menu" onchange="handleMenuSelection()">
+                            <option value="" disabled selected>Menu</option>
+                            <option value="application">Application</option>
+                            <option value="srs">SRS</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+
+    <section class="hero">
+        <img class="homeImg" src="logos/home_back.jpg" alt="Background Image"/>
+        <div class="hero-content">
+            <h1 class="slogan">Explore More, Worry Less</h1>
+            <input id="searchInput" class="search" placeholder="Search destination">
+            <button id="searchButton">Search</button> 
+            <div id="items"> 
+                <div class="item">Dhaka</div> 
+            </div> 
+            <div id="noMatch">
+                <b></b>No match found.</b></div>
+            </div> 
+            
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-text">
+                Wanderer is a premier travel agency dedicated to providing exceptional travel experiences. 
+                From breathtaking destinations to seamless booking resources, we strive to make your travels 
+                memorable and stress-free. With our experienced team and extensive network, we ensure that you 
+                explore more, worry less.
+            </p>
+        </div>
+    </section>
+
+    <section class="hero-body">
+        <div class="h5-title">
+            <h5 class="hero-title">Your best tour starts here.</h5>
+        </div>
+        <div class="main-body"> 
+            <div class="f-pic1">
+                <img src="logos/mosq.png" alt="city of Mosque">
+                <div class="description1"> 
+                    <p>Istambul, Türkiye <span onclick="getalert()">See More</span></p>
+                </div>
+             </div>
+            
+             <div class="f-pic2">
+                <img src="logos/ocean.png" alt="sea beach">
+                <div class="description2"> 
+                    <p>Green Beach, Uzbekistan <span onclick="getalert()">See More</span></p>
+                </div>
+             </div>
+           
+             <div class="f-pic3">
+                <img src="logos/city.png" alt="city palace">
+                <div class="description3"> 
+                    <p>Black stone, Egypt<span onclick="getalert()">See More</span></p>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section class="review">
+      <div class="cus-cont">
+        <div class="sec-title">
+            <h5>See happy guests travelling now #simplywanderer</h5>
+            <p>See what travellers around the world are up to right now</p>
+            <hr class="cus-hr">
+        </div>
+        <div class="only-pic">
+            <img class="customer1" src="logos/tour1.jpg" alt="Imgofcustomers">
+            <img class="customer2" src="logos/tour12.jpg" alt="Imgofcustomers">
+            <img class="customer3" src="logos/tour6.jpg" alt="Imgofcustomers">
+        </div>
+     </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Bond Center (Level 5), House 71, Road 11, Block D, Banani, Dhaka -1213, Bangladesh</p>
+                <p>Timings: 8:00 AM to 10:00 PM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Customer Care</h3>
+                <p>8:00 AM to 10:00 PM</p>
+                <p>Email: <a href="mailto:support@wanderer.com">support@wanderer.com</a></p>
+                <p>Phone: <a href="tel:09647554411">09647554411</a></p>
+                <p>For the best experience, please connect from the registered number.</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Wanderer | All rights reserved.</p>
+        </div>
+    </footer>
+  
+    <script src="script.js"></script> 
+
+</body>
+</html>
